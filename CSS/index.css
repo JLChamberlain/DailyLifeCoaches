@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-image: url("../IMG/Curve.png");
+  background-position: center;
+  background-size: 100% 100%;
+  height: 750px;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+header a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+  color: #8429FF;
+}
+
+header a {
+  text-decoration: none;
+  font-family: cambria;
+  font-size: 30px;
+  color: #8429FF;
+  position: absolute;
+  width: 350px;
+  height: 100px;
+  margin: 10px 0px 0px 10px;
+}
+
+header a span {
+  position: absolute;
+  margin: 38px 0px 0px 0px;
+}
+
+footer {
+  background: #2A0B53;
+  bottom: 0;
+  width: 100%;
+  color: #ffffff;
+  padding: 20px 0px 20px 0px;
+  margin-top: 20px;
+}
+
+footer div {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+article {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/*Start of CSS For Navigation Menu*/
+#Appointment {
+  background: #ffffff;
+  color: #2A0B53;
+  padding: 5px;
+  border: solid;
+  border-radius: 5px;
+}
+
+#Appointment:hover {
+  background: #8429FF;
+  color: #ffffff;
+  padding: 5px;
+  border: #8429FF solid;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 10px 35px 25px 25px;
+  position: absolute;
+  top: 0;
+  right: 0; 
+  z-index: 4;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li:not(:first-child) {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  display: inline-block;
+  outline: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: serif;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+nav ul li a:hover {
+  color: #8429FF;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 10%;
+    width: 10%;
+    z-index: 5;
+    opacity: 0;
+    transition: all 0.2s ease;
+    background-color: #2A0B53;
+  }
+
+  .nav-container ul {
+    position: absolute;
+    top: 150px;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  .nav-container ul li {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  .nav-container ul li:nth-child(1) a {
+    transition-delay: 0.2s;
+  }
+
+  .nav-container ul li:nth-child(2) a {
+    transition-delay: 0.3s;
+  }
+
+  .nav-container ul li:nth-child(3) a {
+    transition-delay: 0.4s;
+  }
+
+  .nav-container ul li:nth-child(4) a {
+    transition-delay: 0.5s;
+  }
+
+  .nav-container ul li:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .nav-container ul li a {
+    padding: 5px 10px 10px 0px;
+    opacity: 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    transform: translateY(-20px);
+    transition: all 0.2s ease;
+  }
+
+  .nav-open {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    z-index: 9999;
+    border-radius: 50%;
+  }
+
+  .nav-open i {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #8429FF;
+    border-radius: 2px;
+    margin-left: 14px;
+  }
+
+  .nav-open i:nth-child(1) {
+    margin-top: 16px;
+  }
+
+  .nav-open i:nth-child(2) {
+    margin-top: 4px;
+    opacity: 1;
+  }
+
+  .nav-open i:nth-child(3) {
+    margin-top: 4px;
+  }
+
+  .main-container {
+    z-index: 3;
+  }
+
+  #Appointment {
+    background-color: #8429FF;
+    border: #8429FF;
+    color: #ffffff;
+  }
+
+  #Appointment:hover {
+    background-color: #ffffff;
+    border: #ffffff;
+    color: #8429FF;
+  }
+} 
+
+#nav:checked + .nav-open {
+  transform: rotate(45deg);
+}
+
+#nav:checked + .nav-open i {
+  background: #8429FF;
+  transition: transform 0.2s ease;
+}
+
+#nav:checked + .nav-open i:nth-child(1) {
+  transform: translateY(6px) rotate(180deg);
+}
+
+#nav:checked + .nav-open i:nth-child(2) {
+  opacity: 0;
+}
+
+#nav:checked + .nav-open i:nth-child(3) {
+  transform: translateY(-6px) rotate(90deg);
+}
+
+#nav:checked ~ .nav-container {
+  z-index: 9990;
+  opacity: 1;
+}
+
+#nav:checked+.nav-open+.nav-container {
+    width: 100%;
+    height: 100%;
+}
+
+#nav:checked ~ .nav-container ul li a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  display: none;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+/*End of CSS For Navigation Menu*/
