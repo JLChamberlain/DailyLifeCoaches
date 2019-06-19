@@ -1,4 +1,4 @@
-/* CSS for other pages besides index.html (few changes specific for other pages)*/
+/* CSS for other pages besides index.html */
 body {
   margin: 0;
 }
@@ -38,6 +38,7 @@ header a span {
   margin: 38px 0px 0px 0px;
 }
 
+/* Start of CSS for Footer */
 footer {
   background: #2A0B53;
   bottom: 0;
@@ -99,8 +100,9 @@ footer div section a:hover {
   width: 100%;
   padding: 20px 0px 10px 0px;
 }
+/* End of CSS for Footer */
 
-/*Start of CSS For Navigation Menu*/
+/* Start of CSS For Navigation Menu */
 #Appointment {
   background: #8429FF;
   color: #ffffff;
@@ -318,7 +320,7 @@ nav ul li a:hover {
   margin: auto;
   overflow: hidden;
 }
-/*End of CSS For Navigation Menu*/
+/* End of CSS For Navigation Menu */
 
 @media screen and (max-width: 450px) {
   header {
@@ -352,11 +354,6 @@ nav ul li a:hover {
   header {
     max-height: 750px;
   }
-}
-
-#Under-Construction { /* For pages being built */
-  width: 100%;
-  margin: 120px 0px 300px 0px;
 }
 
 /* Start of CSS specific for testimonial.html */
@@ -412,22 +409,7 @@ nav ul li a:hover {
 }
 /* End of CSS specific for testimonial.html */
 
-/* Start of CSS specific for contact.html */
-#SubmitForm  {
-  width: 50%;
-  margin: 10px auto;
-  background: #8429FF;
-  display: block;
-}
-
-#SubmitForm:hover  {
-  background: #5f1cb6;
-}
-
-label {
-  margin: 15px 0px 0px 0px;
-}
-
+/* Start of CSS specific for contact.html, #BodyInfo is used across multiple pages */
 #BodyInfo h4 {
   margin: 10px 0px 10px 0px;
 }
@@ -452,27 +434,23 @@ label {
   font-size: 40px;
   vertical-align: middle;
 }
-
-#ContactForm {
-  padding: 40px 0px 0px 0px;
-}
 /* End of CSS specific for contact.html */
 
-/* Start of CSS specific for testimonial.html */
-#Appointment-Calendar form {
+/* Start of CSS for contact.html & appointment.html forms */
+#Appointment-Calendar form, #ContactForm form {
   display: block;
   text-align: center;
   width: 70%;
   margin: 0 auto;
 }
 
-#Appointment-Calendar {
+#Appointment-Calendar, #ContactForm {
   margin: auto;
   display: block;
   padding: 20px 0px 100px 0px;
 } 
 
-#Appointment-Calendar form input {
+#Appointment-Calendar form input, #ContactForm form input {
   margin: 5px auto;
   display: block;
   border-radius: 5px;
@@ -483,12 +461,12 @@ label {
   border: 3px solid #2A0B53;
 }
 
-#Appointment-Calendar form textarea {
+#Appointment-Calendar form textarea, #ContactForm form textarea {
   border: 3px solid #2A0B53;
   max-width: 100%;
   min-width: 100%;
   border-radius: 5px;
-  height: 100px;
+  height: 200px;
   text-align: center;
   margin: 0 auto;
 }
@@ -506,13 +484,13 @@ label {
   width: 80%;
 }
 
-#Appointment-Calendar {
+#Appointment-Calendar, #ContactForm {
   font-family: cambria;
 }
 
 @media screen and (max-width: 450px) {
-  #Appointment-Calendar form {
+  #Appointment-Calendar form, #ContactForm form {
     width: 90%;
   }
 }
-/* End of CSS specific for testimonial.html */
+/* End of CSS for contact.html & appointment.html forms */
