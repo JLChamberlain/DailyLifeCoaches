@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Joshua Chamberlain">
+    <link rel="icon" href="IMG/Favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' href='https://seedlogix.com/hubs/themes/infinite/css/bootstrap.css'>
+    <link rel='stylesheet' href='https://seedlogix.com/hubs/themes/infinite/css/stack-interface.css'>
+    <link rel='stylesheet' href='https://seedlogix.com/hubs/themes/infinite/css/socicon.css'>
+    <link rel='stylesheet' href='https://seedlogix.com/hubs/themes/infinite/css/lightbox.min.css'>
+    <link rel='stylesheet' href='https://seedlogix.com/hubs/themes/infinite/css/flickity.css'>
+    <link rel='stylesheet' href='https://seedlogix.com/hubs/themes/infinite/css/iconsmind.css'>
+    <link rel='stylesheet' href='https://seedlogix.com/hubs/themes/infinite/css/jquery.steps.css'>
+    <link rel='stylesheet' href='https://seedlogix.com/hubs/themes/infinite/css/theme.css'>
+    <link rel='stylesheet' href='https://seedlogix.com/hubs/themes/infinite/css/font-roboto.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.9.0/css/all.css'>
+    <link rel="stylesheet" href="CSS/general.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="IMG/Min.png" alt="DailyLifeCoaches Logo"><span>DailyLifeCoaches</span></a>
+    </header>
+    <nav>
+        <input type="checkbox" id="nav" class="hidden" />
+        <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+        <div class="nav-container">
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a id="Appointment" href="appointments.html"><b>Book Appointment</b></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="BodyInfo">
+        <h4>We are very grateful that you have shown interest in DailyLifeCoaches and want to get in contact with us.
+            There are various ways to get in touch with us, you can message us through our social media pages. If you
+            want to get in touch with us as fast as possible then the fastest method is to fill in the form below with
+            the necessary information and we will be in contact with you as fast as possible.<br><br><b>Our social media
+                pages:</b><br><br>
+            <a title="Facebook" target="_blank" href="#"><i class="fab fa-facebook-square"></i></a>
+            <a title="Twitter" target="_blank" href="#"><i class="fab fa-twitter-square"></i></a>
+            <a title="LinkedIn" target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+        </h4>
+
+        <div id="ContactForm">
+            <form method="post" action="Contact/send_email.php">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="first_name" placeholder="Example: John" />
+
+                <label for="lname">Surname:</label>
+                <input type="text" id="lname" name="last_name" placeholder="Example: Smith" />
+
+                <label for="email">Your Email:</label>
+                <input type="text" id="eml" name="email_address" placeholder="Example: JohnSmith@gmail.co.uk" />
+
+                <label for="subject">Your message:</label>
+                <textarea id="subject" name="subject" placeholder="Example: I want to ask the following questions..."
+                    style="height:200px"></textarea>
+
+                <input id="SubmitForm" type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <section id="Useful-Footer">
+                <h1>Useful Links</h1>
+                <!--Links to maybe a HTML pages or PDF's-->
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Business</a>
+                <a href="#">Pricing</a>
+            </section>
+            <section id="Contact-Footer">
+                <h1>Contact/ Social</h1>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                <a href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
+                <a href="#"><i class="fab fa-twitter-square"></i>Twitter</a><br>
+                <a href="#"><i class="fas fa-location-arrow"></i>UK, Dartford, DA2 7JS</a>
+                <a href="tel:5551234567"><i class="fas fa-phone-alt"></i>Phone Us</a> <!-- Change Phone Number-->
+                <a href="mailto:someone@example.com"><i class="fas fa-envelope"></i>Email Us</a> <!-- Change Email -->
+            </section>
+        </div>
+        <div id="Copyright">@2019 Copyright <a href="https://github.com/JLChamberlain" target="_blank">JLChamberlain</a>
+        </div>
+    </footer>
+</body>
+
+</html>

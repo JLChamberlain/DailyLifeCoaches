@@ -3,8 +3,7 @@
     line-height: 1.8em;
     color: #ffffff;
     padding: 5px;
-    min-width: 300px;
-    border: 2px white solid;
+    max-width: 90%;
 }
 
 .col-md-6 h2 {
@@ -13,9 +12,6 @@
 
 .SlideDIV {
     padding: 0px;
-}
-
-.SlideDIV .container {
     width: 100%;
 }
 
@@ -30,6 +26,7 @@
 .flickity-page-dots {
     padding: 0px;
     margin: 0px;
+    bottom: 0;
 }
 
 .flickity-page-dots .dot {
@@ -128,4 +125,31 @@
     width: 100%;
     top: 0;
     margin: 100px 0px 0px 0px;
+    z-index: 3;
+} 
+
+.slider[data-paging="true"]:not(section) .flickity-page-dots {
+    bottom: -10px;
+}
+
+@media only screen and (max-width: 450px) {
+    .main-container {
+        margin: 70px 0px 0px 0px;
+    }
+
+    .slide-text {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .slide-image {
+        width: 80%;
+        height: 60%;
+        max-width: 150px;
+        min-height: 140px;
+    }
+
+    .flickity-page-dots {
+        padding: 15px 0px 0px 0px;
+    }
 }
