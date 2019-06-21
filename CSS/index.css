@@ -59,7 +59,7 @@ footer div section {
 
 footer div section h1 {
   font-size: 20px;
-  color: #8429FF;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -75,7 +75,7 @@ footer div section a i {
 }
 
 footer:not(.bg--primary):not(.bg--dark) a {
-    color: #8429FF;
+    color: #ffffff;
 }
 
 footer div section a:hover {
@@ -96,6 +96,10 @@ footer div section a:hover {
   color: #8429FF;
   width: 100%;
   padding: 20px 0px 10px 0px;
+}
+
+#Copyright a {
+  color: #8429FF;
 }
 
 article {
